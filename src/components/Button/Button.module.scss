@@ -12,6 +12,7 @@
     background-color: var(--while);
     border: 1px solid transparent;
     user-select: none;
+    text-decoration: none;
 
     + .wrapper {
         margin-left: 8px;
@@ -24,6 +25,11 @@
 .icon + .title,
 .title + .icon {
     margin-left: 8px;
+}
+.icon {
+    display:inline-block ;
+    width: 22px;
+    text-align:center;
 }
 //BUTTON TYPE
 .rounded {
@@ -68,3 +74,12 @@
     min-width: 148px;
     padding: 14px 16px;
 }
+.menu-item {
+    margin-left: 10px;
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+    border-radius: 0;
+    padding: 11px 16px;
+}
+
