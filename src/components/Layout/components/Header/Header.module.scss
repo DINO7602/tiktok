@@ -13,6 +13,7 @@
     height: 100%;
     width: var(--default-layout-width);
     display: flex;
+    padding: 0 var(--default-layout-horizontal-spacer);
     align-items: center;
     justify-content: space-between;
 }
@@ -93,11 +94,11 @@
 .custom-login {
     color: red;
 }
-.more-btn{
+.more-btn {
     font-size: 20px;
     margin-left: 28px;
     border: none;
     background: transparent;
     padding: 4px 8px;
+    cursor: pointer;
 }
-

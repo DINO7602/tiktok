@@ -15,7 +15,7 @@
     text-decoration: none;
 
     + .wrapper {
-        margin-left: 8px;
+        margin-left: 0;
     }
     &.disabled {
         pointer-events: none;
@@ -75,11 +75,16 @@
     padding: 14px 16px;
 }
 .menu-item {
-    margin-left: 10px;
+    
     &:hover {
         background-color: rgba(22, 24, 35, 0.03);
     }
     border-radius: 0;
     padding: 11px 16px;
+    line-height: 18px;
+    width: 100%;
+    justify-content: flex-start;
+    margin-left: 0;
+    
 }
 
