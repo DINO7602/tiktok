@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faCircleQuestion,
     faCircleXmark,
-    faCloudUpload,
+    
     faCoins,
     faEarthAsia,
     faEllipsisVertical,
@@ -25,6 +25,8 @@ import {
 import AccountItem from '~/components/AccountItem';
 import Button from '~/components/Button';
 import Menu from '~/components/Popper/Menu';
+import { UploadIcon } from '~/components/icons';
+import Image from '~/components/image';
 
 const cx = classNames.bind(styles);
 const MENU_ITEMS = [
@@ -173,7 +175,7 @@ function Header() {
                         <>
                             <Tippy delay={[0, 200]} content="Upload video" placement="bottom">
                                 <button className={cx('action-btn')}>
-                                    <FontAwesomeIcon icon={faCloudUpload} />
+                                    <UploadIcon/>
                                 </button>
                             </Tippy>
                         </>
@@ -188,7 +190,7 @@ function Header() {
 
                     <Menu items={currentUser ? userMenu : MENU_ITEMS} onChange={handleMenuChange}>
                         {currentUser ? (
-                            <img
+                            <Image
                                 src="https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-giso/deca494d44d778dad7c595a8df5a5e2b~c5_100x100.jpeg?lk3s=a5d48078&x-expires=1710075600&x-signature=2JCCf%2BlfqD%2FWjCCCENVurx78278%3D"
                                 className={cx('user-avatar')}
                                 alt="Nguyen Van A"
