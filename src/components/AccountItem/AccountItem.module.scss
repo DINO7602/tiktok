@@ -6,6 +6,8 @@
     &:hover{
         background-color: rgba(22, 24, 35, 0.03);
     }
+    text-decoration: none;
+    color: (var(--black));
 }
 .avatar {
     width: 40px;
